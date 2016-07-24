@@ -18,7 +18,7 @@ export default class Documents extends React.Component {
               DOKUMENTY
             </div>
             <article>
-              <div class="main">TEST</div>
+              <div class="main"></div>
             </article>
           </div>
         </div>

@@ -27,7 +27,7 @@ export default class Menu extends React.Component {
     return(
       <div style={menuStyle}>
         <div class="col-md-3 menuButton" style={menuButtonStyle}>
-          <Link to={'/'}><i class="fa fa-plane fa-lg" aria-hidden="true"></i> Aktualności</Link>
+          <Link to={'/news'}><i class="fa fa-plane fa-lg" aria-hidden="true"></i> Aktualności</Link>
         </div>
         <div class="col-md-3 menuButton" style={menuButtonStyle}>
           <Link to={'/calendar'}><i class="fa fa-calendar fa-lg" aria-hidden="true"></i> Terminarz</Link>
