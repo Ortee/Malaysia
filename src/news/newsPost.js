@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Bootstrap from 'bootstrap';
 
 
-export default class Event extends React.Component {
+export default class NewsPost extends React.Component {
   constructor(){
     super();
   }
