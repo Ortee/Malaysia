@@ -8,7 +8,7 @@ require('./news.scss');
 export default class News extends React.Component {
   constructor(){
     super();
-    console.log('CALENDAR LOADED');
+    console.log('NEWS LOADED');
   }
   render() {
     return(
