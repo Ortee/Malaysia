@@ -1,0 +1,42 @@
+#eventList{
+  color:white;
+  height: 900px;
+}
+.eventConent{
+  margin-top: 10px;
+  left: 0px;
+  color: black;
+  background-color: white;
+  border-left: 10px solid grey;
+  min-height: 100px;
+}
+.eventConent:hover{
+  opacity: 1.0 !important;
+  border-left: 10px solid #4d4d4d;
+  cursor: pointer
+}
+.eventDate{
+  margin-top: 10px;
+ font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.eventTitle{
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+.eventText{
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+}
+.readMore{
+  float: right;
+  margin-bottom: 3px;
+}
+.readMore:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
