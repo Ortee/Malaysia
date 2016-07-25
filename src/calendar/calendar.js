@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Bootstrap from 'bootstrap';
 import ToggleMenu from '../togglemenu/togglemenu';
+import EventList from './eventList';
 require('./calendar.scss');
 
 export default class Calendar extends React.Component {
@@ -18,9 +19,7 @@ export default class Calendar extends React.Component {
             <div class="col-md-10 col-md-offset-1 pageLogo">
               TERMINARZ
             </div>
-            <article>
-
-            </article>
+            <EventList></EventList>
           </div>
         </div>
       </div>

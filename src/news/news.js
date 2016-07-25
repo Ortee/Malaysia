@@ -19,9 +19,7 @@ export default class News extends React.Component {
             <div class="col-md-10 col-md-offset-1 pageLogo">
               AKTUALNOSCI
             </div>
-            <article>
-                <NewsList></NewsList>
-            </article>
+            <NewsList></NewsList>
           </div>
         </div>
       </div>
