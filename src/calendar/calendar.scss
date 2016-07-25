@@ -8,8 +8,12 @@ $fontStyle: 'Lato', sans-serif;
 $lineColor: #FFFFFF;
 $dotColor: #FFFFFF;
 $textSize: 16px;
-
+$hoverColor : #FFFFFF;
+$dotWeight : 4px;
+$opacity : 0.5;
+$hoverOpacity : 0.7;
 .bg-line {
+  opacity: $opacity;
    width: 100%;
    height: 100%;
    &--h {
@@ -19,7 +23,10 @@ $textSize: 16px;
 }
 
 .dotRight{
+  opacity: $opacity;
   width: 100%;
+  margin-bottom: 2px;
+  margin-top: 3px;
   font-size: 17px;
   font-family: $fontStyle;
 }
@@ -30,6 +37,9 @@ $textSize: 16px;
   margin-left: 91px;
 }
 .dotLeft{
+  opacity: $opacity;
+  margin-bottom: 2px;
+  margin-top: 3px;
   width: 100%;
   font-size: 17px;
   font-family: $fontStyle;
@@ -43,16 +53,44 @@ $textSize: 16px;
   height: 50px;
 }
 .content1{
+  opacity: $opacity;
   width: 50%;
   float: right;
 }
 .line{
-  height: 100px;
+  height: 30px;
+  min-height: 100px;
 }
 .lineContent{
+  opacity: $opacity;
   height: 100px;
   font-size: $textSize;
   font-family: $fontStyle;
   font-weight: 700;
   padding-top: 10px;
+}
+.textHover {
+  color: $hoverColor;
+  opacity: $hoverOpacity;
+}
+.dotHover{
+  color: $hoverColor;
+  opacity: $hoverOpacity;
+}
+.dotHover::before{
+  border: $dotWeight solid $hoverColor;
+}
+.dotHover::after{
+  border: $dotWeight solid $hoverColor;
+}
+.lineHover{
+  .bg-line {
+    opacity: $hoverOpacity;
+     width: 100%;
+     height: 100%;
+     &--h {
+        background: linear-gradient(0deg, $hoverColor, $hoverColor) 50% 50% no-repeat;
+        background-size: $thickness 100%;
+     }
+  }
 }
