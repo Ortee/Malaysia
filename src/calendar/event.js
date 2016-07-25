@@ -6,26 +6,35 @@ import classNames from 'classnames';
 export class Event extends React.Component {
   constructor(){
     super();
-    this.state = {
-        isHovered: false
-    };
+    this.state = { isHovered: false };
   }
+
   hoverIn() {
     this.setState({ isHovered: true });
   }
+
   hoverOut() {
     this.setState({ isHovered: false });
   }
-
   render() {
     let { isHovered } = this.state;
-
     let textClasses = 'col-md-5 lineContent';
-    let dotClasses = '';
+    let dotClasses = ' ';
     let lineClasses = ' ';
-    if(!this.props.sideRight) { dotClasses +=' dotLeft'} else { dotClasses += ' dotRight'}
-    if(isHovered) { lineClasses+=' lineHover'; textClasses += ' textHover'; dotClasses += ' dotHover'}
-
+    if(!this.props.sideRight) {
+      dotClasses += ' dotLeft';
+    } else {
+      dotClasses += ' dotRight';
+    }
+    if(this.props.last) {
+      textClasses = 'col-md-4 col-md-offset-4 lineContent';
+    }
+    if(isHovered) {
+      lineClasses += ' lineHover';
+      textClasses += ' textHover';
+      dotClasses += ' dotHover';
+    }
+    
     if(this.props.sideRight === false){
       return(
         <div onMouseOver={this.hoverIn.bind(this)} onMouseOut={this.hoverOut.bind(this)}>
@@ -38,7 +47,7 @@ export class Event extends React.Component {
             <div class={textClasses} style={this.hoverStyles}>
               {this.props.eventText}
             </div>
-            <Line lineClasses={lineClasses} sideRight={this.props.sideRight} enable={this.props.line}></Line>
+            <Line lineClasses={lineClasses} sideRight={this.props.sideRight} last={this.props.last}></Line>
           </div>
         </div>
       );
@@ -51,7 +60,7 @@ export class Event extends React.Component {
             </div>
           </div>
           <div class="row">
-            <Line lineClasses={lineClasses} sideRight={this.props.sideRight} enable={this.props.line}></Line>
+            <Line lineClasses={lineClasses} sideRight={this.props.sideRight} last={this.props.last}></Line>
             <div class={textClasses} style={this.hoverStyles}>
               {this.props.eventText}
             </div>
@@ -69,7 +78,7 @@ export class Line extends React.Component {
   render() {
     let lineClasses = 'col-md-2 line' + this.props.lineClasses;
     if(this.props.sideRight === true){ lineClasses += ' col-md-offset-5'; };
-    if(this.props.enable === false) {
+    if(this.props.last === true) {
       var lineStyle = {visibility: 'hidden'}
     } else {
       var lineStyle = {visibility: 'visible'}

@@ -1,6 +1,7 @@
 #eventList{
   color:white;
-  height: 900px;
+  height: 100%;
+  margin-bottom: 10px;
 }
 // Variables
 $thickness:  6px;
@@ -12,6 +13,8 @@ $hoverColor : #FFFFFF;
 $dotWeight : 4px;
 $opacity : 0.5;
 $hoverOpacity : 0.7;
+
+
 .bg-line {
   opacity: $opacity;
    width: 100%;
