@@ -19,7 +19,7 @@ ReactDOM.render(
     <Route path="/" component={Startpage}>
     </Route>
     <Route path="news" name="news" component={News}></Route>
-    <Route path="/post/:postName" component={Post}/>
+    <Route name="post" path="/post/:postName" component={Post}/>
     <Route path="calendar" name="calendar" component={Calendar}></Route>
     <Route path="galery" name="galery" component={Galery}></Route>
     <Route path="documents" name="documents" component={Documents}></Route>

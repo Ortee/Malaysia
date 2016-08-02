@@ -11,7 +11,7 @@
       "date":"08 sie 2016",
       "title":"Wydarzenie 2",
       "shortDescription":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat pharetra nibh vitae efficitur. Morbi sit amet luctus libero, sit amet molestie tellus.",
-      "longDescription":"",
+      "longDescription":"Lorem<b>ipsum</b>",
       "link":"wydarzenie2"
     },
     {
