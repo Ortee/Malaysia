@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Bootstrap from 'bootstrap';
+import ParseText from './parseText';
 import ToggleMenu from '../togglemenu/togglemenu';
 require('./post.scss');
-
 export default class Post extends React.Component {
   constructor(props){
     super(props);
@@ -40,8 +40,7 @@ export default class Post extends React.Component {
               <artice>
                 <div class="col-xs-12 postContent">
                   <div class="col-xs-12 postText">
-                  {this.state.post.shortDescription}
-                  {this.state.post.longDescription}
+                  <ParseText text={this.state.post.longDescription}/>
                   </div>
                 </div>
               </artice>
