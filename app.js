@@ -8,7 +8,8 @@ import Galery from './src/galery/galery';
 import Documents from './src/documents/documents';
 import Background from './src/background';
 import News from './src/news/news';
-
+import Post from './src/news/post';
+import Nomatch from './src/tools/nomatch';
 require('./src/base.scss');
 
 const content = document.getElementById('content');
@@ -18,8 +19,10 @@ ReactDOM.render(
     <Route path="/" component={Startpage}>
     </Route>
     <Route path="news" name="news" component={News}></Route>
+    <Route path="/post/:postName" component={Post}/>
     <Route path="calendar" name="calendar" component={Calendar}></Route>
     <Route path="galery" name="galery" component={Galery}></Route>
     <Route path="documents" name="documents" component={Documents}></Route>
+    <Route path="*" component={Nomatch}/>
   </Router>,
 content);

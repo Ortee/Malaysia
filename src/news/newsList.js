@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Bootstrap from 'bootstrap';
 import NewsPost from './newsPost';
+var { Router, Route, Link , browserHistory } = require('react-router');
 
 export default class NewsList extends React.Component {
   constructor(){
@@ -20,7 +21,7 @@ export default class NewsList extends React.Component {
     if(this.state.posts)
     {
       this.state.posts.forEach(function(post, index) {
-        rows.push(<NewsPost key={index} eventDate={post.date} eventTitle={post.title} eventContent={post.shortDescription}></NewsPost>);
+        rows.push(<Link to={`/post/${post.link}`}><NewsPost key={index} eventDate={post.date} eventTitle={post.title} eventContent={post.shortDescription}></NewsPost></Link>);
        });
       return(
         <artice>

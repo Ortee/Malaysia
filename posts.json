@@ -4,25 +4,29 @@
       "date":"07 sie 2016",
       "title":"Wydarzenie 1",
       "shortDescription":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat pharetra nibh vitae efficitur. Morbi sit amet luctus libero, sit amet molestie tellus. Nunc auctor sit amet enim in egestas. Proin eget consequat risus, nec placerat lacus",
-      "longDescription":""
+      "longDescription":"",
+      "link":"wydarzenie1"
     },
     {
       "date":"08 sie 2016",
       "title":"Wydarzenie 2",
       "shortDescription":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat pharetra nibh vitae efficitur. Morbi sit amet luctus libero, sit amet molestie tellus.",
-      "longDescription":""
+      "longDescription":"",
+      "link":"wydarzenie2"
     },
     {
       "date":"09 sie 2016",
       "title":"Wydarzenie 3",
       "shortDescription":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat pharetra nibh vitae efficitur. Morbi sit amet luctus libero, sit amet molestie tellus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat pharetra nibh vitae efficitur. Morbi sit amet luctus libero, sit amet molestie tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat pharetra nibh vitae efficitur. Morbi sit amet luctus libero, sit amet molestie tellus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat pharetra nibh vitae efficitur. Morbi sit amet luctus libero, sit amet molestie tellus.",
-      "longDescription":""
+      "longDescription":"",
+      "link":"wydarzenie3"
     },
     {
       "date":"10 sie 2016",
       "title":"Wydarzenie 4",
       "shortDescription":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat pharetra nibh vitae efficitur. Morbi sit amet luctus libero, sit amet molestie tellus.",
-      "longDescription":""
+      "longDescription":"",
+      "link":"wydarzenie4"
     }
   ]
 }
