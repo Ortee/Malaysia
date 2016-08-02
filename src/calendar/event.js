@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Bootstrap from 'bootstrap';
-import classNames from 'classnames';
 
 export class Event extends React.Component {
   constructor(){
@@ -16,9 +15,10 @@ export class Event extends React.Component {
   hoverOut() {
     this.setState({ isHovered: false });
   }
+  
   render() {
     let { isHovered } = this.state;
-    let textClasses = 'col-md-5 lineContent';
+    let textClasses = 'col-xs-5 lineContent';
     let dotClasses = ' ';
     let lineClasses = ' ';
     if(!this.props.sideRight) {
@@ -27,19 +27,19 @@ export class Event extends React.Component {
       dotClasses += ' dotRight';
     }
     if(this.props.last) {
-      textClasses = 'col-md-4 col-md-offset-4 lineContent';
+      textClasses = 'col-xs-4 col-xs-offset-4 lineContent';
     }
     if(isHovered) {
       lineClasses += ' lineHover';
       textClasses += ' textHover';
       dotClasses += ' dotHover';
     }
-    
+
     if(this.props.sideRight === false){
       return(
         <div onMouseOver={this.hoverIn.bind(this)} onMouseOut={this.hoverOut.bind(this)}>
           <div class="row">
-            <div class="col-md-4 col-md-offset-4">
+            <div class="col-xs-4 col-xs-offset-4">
               <div class={dotClasses}> {this.props.eventDate} </div>
             </div>
           </div>
@@ -55,7 +55,7 @@ export class Event extends React.Component {
       return(
         <div onMouseOver={this.hoverIn.bind(this)} onMouseOut={this.hoverOut.bind(this)}>
           <div class="row">
-            <div class="col-md-4 col-md-offset-4">
+            <div class="col-xs-4 col-xs-offset-4">
               <div class={dotClasses}> {this.props.eventDate} </div>
             </div>
           </div>
@@ -76,8 +76,8 @@ export class Line extends React.Component {
     super();
   }
   render() {
-    let lineClasses = 'col-md-2 line' + this.props.lineClasses;
-    if(this.props.sideRight === true){ lineClasses += ' col-md-offset-5'; };
+    let lineClasses = 'col-xs-2 line' + this.props.lineClasses;
+    if(this.props.sideRight === true){ lineClasses += ' col-xs-offset-5'; };
     if(this.props.last === true) {
       var lineStyle = {visibility: 'hidden'}
     } else {

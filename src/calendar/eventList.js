@@ -2,24 +2,46 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Bootstrap from 'bootstrap';
 import { EventLeft, EventRight, Event } from './event';
+
 export default class EventList extends React.Component {
   constructor(){
     super();
+    this.state = { data: false };
   }
+
+  componentDidMount() {
+    $.getJSON(__dirname + 'events.json').done(function(data) {
+      this.setState({data: data.events});
+    }.bind(this));
+  }
+
   render() {
-    return(
-      <artice>
-        <div id="eventList" class="col-xs-12 col-sm-12 col-md-12 ">
-          <Event last={false} sideRight={true} eventDate="12 sie 2016" eventText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere imperdiet erat in pharetra."></Event>
-          <Event last={false} sideRight={false} eventDate="13 sie 2016" eventText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere imperdiet erat in pharetra."></Event>
-          <Event last={false} sideRight={true} eventDate="14 sie 2016" eventText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere imperdiet erat in pharetra."></Event>
-          <Event last={false} sideRight={false} eventDate="15 sie 2016" eventText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere imperdiet erat in pharetra."></Event>
-          <Event last={false} sideRight={true} eventDate="16 sie 2016" eventText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere imperdiet erat in pharetra."></Event>
-          <Event last={false} sideRight={false} eventDate="17 sie 2016" eventText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere imperdiet erat in pharetra."></Event>
-          <Event last={false} sideRight={true} eventDate="18 sie 2016" eventText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere imperdiet erat in pharetra."></Event>
-          <Event last={true} sideRight={false} eventDate="19 sie 2016" eventText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere imperdiet erat in pharetra."></Event>
-        </div>
-      </artice>
-    );
+    let rows = [];
+    let isLast = false;
+    let dataLength = this.state.data;
+    if(this.state.data)
+    {
+      this.state.data.forEach(function(event, index) {
+        if(index === dataLength.length-1)
+        {
+          isLast = true;
+        }
+        if(index%2===0)
+        {
+          rows.push(<Event key={index} last={isLast} sideRight={true} eventDate={event.date} eventText={event.description}></Event>);
+        } else {
+          rows.push(<Event key={index} last={isLast} sideRight={false} eventDate={event.date} eventText={event.description}></Event>);
+        }
+       });
+
+      return(
+        <artice>
+          <div id="eventList" class="col-xs-12 col-sm-12 col-md-12 ">
+            {rows}
+          </div>
+        </artice>
+      );
+    }
+    return(<div></div>);
   }
 }

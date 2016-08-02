@@ -3,6 +3,7 @@ var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
+  node: { fs: 'empty' },
   context: path.join(__dirname),
   devtool: debug ? "inline-sourcemap" : null,
   entry: './app.js',
