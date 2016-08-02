@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Bootstrap from 'bootstrap';
 import ToggleMenu from '../togglemenu/togglemenu';
-import EventList from './eventList';
+import NewsList from './newsList';
 require('./news.scss');
 
 export default class News extends React.Component {
@@ -19,9 +19,7 @@ export default class News extends React.Component {
             <div class="col-md-10 col-md-offset-1 pageLogo">
               AKTUALNOSCI
             </div>
-            <article>
-                <EventList></EventList>
-            </article>
+            <NewsList></NewsList>
           </div>
         </div>
       </div>
