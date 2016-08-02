@@ -26,7 +26,7 @@ export default class EventList extends React.Component {
         {
           isLast = true;
         }
-        if(index%2===0)
+        if(index % 2 === 0)
         {
           rows.push(<Event key={index} last={isLast} sideRight={true} eventDate={event.date} eventText={event.description}></Event>);
         } else {
