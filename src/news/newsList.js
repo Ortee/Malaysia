@@ -11,7 +11,7 @@ export default class NewsList extends React.Component {
   }
 
   componentWillMount(){
-    $.getJSON(__dirname + 'posts.json').done(function(data) {
+    $.getJSON(__dirname + 'data/posts.json').done(function(data) {
       this.setState({posts: data.posts});
     }.bind(this));
   }

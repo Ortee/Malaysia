@@ -2,7 +2,7 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 
 var backgroundStyle = {
-  backgroundImage:"url('./img/background.jpg')",
+  backgroundImage:"url('./assets/img/background.jpg')",
   width:'100%',
   height:'100%',
   backgroundSize:'cover',

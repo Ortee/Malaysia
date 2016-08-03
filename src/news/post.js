@@ -15,7 +15,7 @@ export default class Post extends React.Component {
     componentWillMount(){
       let link = this.props.params.postName;
       let postObj;
-      $.getJSON(__dirname + 'posts.json').done(function(data) {
+      $.getJSON(__dirname + 'data/posts.json').done(function(data) {
         data.posts.forEach(function(postData, index) {
           if(postData.link === link){
             postObj = postData;

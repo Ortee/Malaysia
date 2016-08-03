@@ -10,7 +10,7 @@ export default class EventList extends React.Component {
   }
 
   componentDidMount() {
-    $.getJSON(__dirname + 'events.json').done(function(data) {
+    $.getJSON(__dirname + 'data/events.json').done(function(data) {
       this.setState({data: data.events});
     }.bind(this));
   }

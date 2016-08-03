@@ -4,7 +4,7 @@
       "date":"07 sie 2016",
       "title":"Wydarzenie 1",
       "shortDescription":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat pharetra nibh vitae efficitur. Morbi sit amet luctus libero, sit amet molestie tellus. Nunc auctor sit amet enim in egestas. Proin eget consequat risus, nec placerat lacus",
-      "longDescription":"<center><br>PTAK<br><figure><img src='http://keenthemes.com/preview/metronic/theme/assets/global/plugins/jcrop/demos/demo_files/image1.jpg' alt='Smiley face' width='600' height='400'><figcaption>Testowy lisc. Zrobiony wczoraj.</figurecaption></figure></center>",
+      "longDescription":"<center><br>PTAK<br><figure><img src='./data/galery/image1.jpg' alt='Smiley face' width='600' height='400'><figcaption>Testowy lisc. Zrobiony wczoraj.</figurecaption></figure></center>",
       "link":"wydarzenie1"
     },
     {
