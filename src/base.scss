@@ -1,3 +1,19 @@
+html, body{
+  height: 100%;
+}
+.app{
+  height: 100%;
+}
+#content{
+  height: 100%;
+}
+.container{
+  height: 100%;
+}
+.contentRow{
+  height: 100%;
+  margin-bottom: 2%;
+}
 a {
     color:white;
     text-decoration: none;
@@ -18,7 +34,7 @@ a:visited {
 }
 
 .pageBackground{
-  margin-bottom: 20px;
+  min-height: 100%;
   margin-top: 1%;
   color: white;
   text-align:center;

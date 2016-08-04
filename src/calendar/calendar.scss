@@ -1,7 +1,5 @@
 #eventList{
   color:white;
-  height: 100%;
-  margin-bottom: 10px;
 }
 // Variables
 $thickness:  6px;
@@ -14,6 +12,13 @@ $dotWeight : 4px;
 $opacity : 0.5;
 $hoverOpacity : 0.7;
 
+.calendarBackground{
+  min-height: 100%;
+  margin-top: 1%;
+  color: white;
+  text-align:center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 .bg-line {
   opacity: $opacity;

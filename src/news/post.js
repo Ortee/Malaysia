@@ -5,6 +5,7 @@ import ParseText from './parseText';
 import ToggleMenu from '../togglemenu/togglemenu';
 import config from '../config.json';
 require('./post.scss');
+
 export default class Post extends React.Component {
   constructor(props){
     super(props);

@@ -1,6 +1,5 @@
 #eventList{
   color:white;
-  height: 100%;
 }
 .eventConent{
   opacity: 0.6;
@@ -41,4 +40,10 @@
 .readMore:hover{
   text-decoration: underline;
   cursor: pointer;
+}
+.defaultContent{
+  color:white;
+  height: 100%;
+  margin-bottom: 10px;
+  min-height: 1000px;
 }

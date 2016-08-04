@@ -23,7 +23,7 @@ export default class NewsList extends React.Component {
     if(this.state.posts)
     {
       this.state.posts.forEach(function(post, index) {
-        rows.push(<Link to={`/post/${post.link}`}><NewsPost key={index} eventDate={post.date} eventTitle={post.title} eventContent={post.shortDescription}></NewsPost></Link>);
+        rows.push(<Link to={`/post/${post.link}`} key={index}><NewsPost key={index} eventDate={post.date} eventTitle={post.title} eventContent={post.shortDescription}></NewsPost></Link>);
        });
       return(
         <artice>
@@ -33,6 +33,6 @@ export default class NewsList extends React.Component {
         </artice>
       );
     }
-    return(<div></div>);
+    return(<artice><div class="col-xs-12 defaultContent"></div></artice>);
   }
 }

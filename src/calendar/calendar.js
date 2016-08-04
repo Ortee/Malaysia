@@ -14,8 +14,8 @@ export default class Calendar extends React.Component {
     return(
       <div class="container">
       <ToggleMenu></ToggleMenu>
-        <div class="row">
-          <div class="col-xs-12 col-md-8 col-md-offset-2 pageBackground">
+        <div class="row contentRow">
+          <div class="col-xs-12 col-md-8 col-md-offset-2 calendarBackground">
             <div class="col-xs-10 col-xs-offset-1 pageLogo">
               TERMINARZ
             </div>
