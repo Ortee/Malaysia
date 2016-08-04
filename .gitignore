@@ -2,3 +2,4 @@
 *.hot-update.*
 npm-debug.log
 .DS_Store
+bundle.js
