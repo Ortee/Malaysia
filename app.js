@@ -5,7 +5,7 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import Startpage from './src/startPage/main';
 import Calendar from './src/calendar/calendar';
 import Galery from './src/galery/galery';
-import Documents from './src/documents/documents';
+import Information from './src/information/information';
 import Background from './src/background';
 import News from './src/news/news';
 import Post from './src/news/post';
@@ -22,7 +22,7 @@ ReactDOM.render(
     <Route name="post" path="/post/:postName" component={Post}/>
     <Route path="calendar" name="calendar" component={Calendar}></Route>
     <Route path="galery" name="galery" component={Galery}></Route>
-    <Route path="documents" name="documents" component={Documents}></Route>
+    <Route path="information" name="information" component={Information}></Route>
     <Route path="*" component={Nomatch}/>
   </Router>,
 content);

@@ -36,7 +36,7 @@ export default class Menu extends React.Component {
           <Link to={'/galery'}><i class="fa fa-camera fa-lg" aria-hidden="true"></i> &nbsp;Zdjęcia&nbsp;&nbsp;</Link>
         </div>
         <div class="col-md-3 menuButton" style={menuButtonStyle}>
-          <Link to={'/documents'}><i class="fa fa-info fa-lg" aria-hidden="true"></i> Dokumenty</Link>
+          <Link to={'/information'}><i class="fa fa-info fa-lg" aria-hidden="true"></i> Informacje</Link>
         </div>
       </div>
     );

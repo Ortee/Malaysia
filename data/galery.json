@@ -1,0 +1,34 @@
+{
+  "galery":[
+    {
+      "date":"03 sie 2016",
+      "src":"./data/galery/image1.jpg",
+      "caption":"Lorem ipsum dolor sit amet."
+    },
+    {
+      "date":"04 sie 2016",
+      "src":"./data/galery/image1.jpg",
+      "caption":"Lorem ipsum dolor sit amet."
+    },
+    {
+      "date":"03 sie 2016",
+      "src":"./data/galery/image1.jpg",
+      "caption":"Lorem ipsum dolor sit amet."
+    },
+    {
+      "date":"04 sie 2016",
+      "src":"./data/galery/image1.jpg",
+      "caption":"Lorem ipsum dolor sit amet."
+    },
+    {
+      "date":"03 sie 2016",
+      "src":"./data/galery/image1.jpg",
+      "caption":"Lorem ipsum dolor sit amet."
+    },
+    {
+      "date":"04 sie 2016",
+      "src":"./data/galery/image1.jpg",
+      "caption":"Lorem ipsum dolor sit amet."
+    }
+  ]
+}

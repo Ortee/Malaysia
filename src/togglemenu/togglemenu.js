@@ -25,7 +25,7 @@ export default class ToggleMenu extends React.Component {
               <Link to={'/galery'}><i class="fa fa-camera fa-lg" aria-hidden="true"></i></Link>
             </div>
             <div class="col-xs-2 toggleMenuButton">
-              <Link to={'/documents'}><i class="fa fa-info fa-lg" aria-hidden="true"></i></Link>
+              <Link to={'/information'}><i class="fa fa-info fa-lg" aria-hidden="true"></i></Link>
             </div>
           </div>
         </div>
