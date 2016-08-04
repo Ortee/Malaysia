@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Bootstrap from 'bootstrap';
 import ToggleMenu from '../togglemenu/togglemenu';
 import Gallery from 'react-photo-gallery';
+import config from '../config.json';
 require('./galery.scss');
 
 export default class Galery extends React.Component {
@@ -12,7 +13,7 @@ export default class Galery extends React.Component {
   }
 
   componentWillMount(){
-    $.getJSON(__dirname + 'data/galery.json').done(function(data) {
+    $.getJSON(__dirname + config.dataFolder + '/galery.json').done(function(data) {
       this.setState({galery: data.galery});
     }.bind(this));
   }
@@ -22,8 +23,8 @@ export default class Galery extends React.Component {
     if(this.state.galery)
     {
       this.state.galery.forEach(function(photo, index) {
-        PHOTO_SET.push({  src: photo.src, width: 200, height: 200, aspectRatio: 1.3,
-          lightboxImage:{ src: photo.src, caption: photo.date +' '+ photo.caption}});
+        PHOTO_SET.push({  src: config.dataFolder + '/galery/' + photo.src, aspectRatio: 1.3,
+          lightboxImage:{ src: config.dataFolder + '/galery/' + photo.src, caption: photo.date +' '+ photo.caption}});
        });
       return(
         <div class="container">

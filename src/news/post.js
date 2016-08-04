@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Bootstrap from 'bootstrap';
 import ParseText from './parseText';
 import ToggleMenu from '../togglemenu/togglemenu';
+import config from '../config.json';
 require('./post.scss');
 export default class Post extends React.Component {
   constructor(props){
@@ -15,7 +16,7 @@ export default class Post extends React.Component {
     componentWillMount(){
       let link = this.props.params.postName;
       let postObj;
-      $.getJSON(__dirname + 'data/posts.json').done(function(data) {
+      $.getJSON(__dirname + config.dataFolder + '/posts.json').done(function(data) {
         data.posts.forEach(function(postData, index) {
           if(postData.link === link){
             postObj = postData;

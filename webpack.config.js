@@ -6,7 +6,7 @@ module.exports = {
   node: { fs: 'empty' },
   context: path.join(__dirname),
   devtool: debug ? "inline-sourcemap" : null,
-  entry: './app.js',
+  entry: './src/app.js',
   module: {
     loaders: [
       {
@@ -21,8 +21,12 @@ module.exports = {
         query: {
           presets: ['react', 'es2015', 'stage-0'],
           plugins: ['react-html-attrs', 'transform-class-properties', 'transform-decorators-legacy'],
-        }
+        },
       },
+      {
+        test: /\.json$/,
+        loader: 'json'
+      }
     ]
   },
   output: {

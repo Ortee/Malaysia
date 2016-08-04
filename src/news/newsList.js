@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Bootstrap from 'bootstrap';
 import NewsPost from './newsPost';
+import config from '../config.json';
+
 var { Router, Route, Link , browserHistory } = require('react-router');
 
 export default class NewsList extends React.Component {
@@ -11,7 +13,7 @@ export default class NewsList extends React.Component {
   }
 
   componentWillMount(){
-    $.getJSON(__dirname + 'data/posts.json').done(function(data) {
+    $.getJSON(__dirname + config.dataFolder + '/posts.json').done(function(data) {
       this.setState({posts: data.posts});
     }.bind(this));
   }

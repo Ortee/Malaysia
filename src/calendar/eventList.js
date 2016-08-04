@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Bootstrap from 'bootstrap';
 import { EventLeft, EventRight, Event } from './event';
+import config from '../config.json';
 
 export default class EventList extends React.Component {
   constructor(){
@@ -10,7 +11,7 @@ export default class EventList extends React.Component {
   }
 
   componentDidMount() {
-    $.getJSON(__dirname + 'data/events.json').done(function(data) {
+    $.getJSON(__dirname + config.dataFolder + '/events.json').done(function(data) {
       this.setState({data: data.events});
     }.bind(this));
   }
