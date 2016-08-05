@@ -1,0 +1,31 @@
+{
+  "travel":[
+    {
+      "date":"2016-**-**",
+      "startLocation":"Lorem (LOR)",
+      "stopLocation":"Lorem (LOR)",
+      "startTime":"--:-- CEST",
+      "stopTime":"--:-- CEST",
+      "status": "NO",
+      "link": "https://www.google.com"
+    },
+    {
+      "date":"2016-**-**",
+      "startLocation":"Lorem (LOR)",
+      "stopLocation":"Lorem (LOR)",
+      "startTime":"--:-- CEST",
+      "stopTime":"--:-- CEST",
+      "status": "YES",
+      "link": "https://www.flightradar24.com/flight/qr202"
+    },
+    {
+      "date":"2016-**-**",
+      "startLocation":"Lorem (LOR)",
+      "stopLocation":"Lorem (LOR)",
+      "startTime":"--:-- CEST",
+      "stopTime":"--:-- CEST",
+      "status": "DONE",
+      "link": "https://www.flightradar24.com/flight/qr202"
+    }
+  ]
+}

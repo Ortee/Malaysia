@@ -1,4 +1,29 @@
-.main{
+.infoMenuButton{
+  height: 50px;
+  margin-left: 0px;
+  margin-right: 0px;
+  overflow: hidden;
+  opacity: 0.5;
+  background: rgba(0, 0, 0, 0.5);
+  font-family: 'Lato', sans-serif;
+  font-size: 2.5em;
+  font-weight: 900;
+}
+.clicked{
+  background-color: transparent;
+}
+.transportContent{
+  height: 100%;
+  margin-top: 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8em;
+  // text-align: left;
+  width: 100%;
+}
+.greyIcon .redIcon .greenIcon{
+  border:1px solid #090909;
+  width: 50px;
+  height: 50px;
+  background-color: red;
   position: absolute;
-  background-color: orange;
 }
