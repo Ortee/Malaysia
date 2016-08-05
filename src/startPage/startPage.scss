@@ -1,16 +1,22 @@
 .logo{
   color: white;
-  position: absolute;
   opacity: 0.8;
-  margin-top: 10%;
   font-size: 8em;
   width: 100%;
   font-family: "Lato", sans-serif;
   font-weight: 900;
   text-align: center;
 }
+.frontPageContent{
+  width: 100%;
+  margin:auto;
+  vertical-align: middle;
+  display: inline-block;
+}
 .mainContrainer{
+  height: 100%;
   text-align: center;
+  position: relative;
 }
 .menuButton{
   border-bottom: 3px solid white;
@@ -21,11 +27,14 @@
 }
 .menu{
   color: white;
-  position: absolute;
-  margin-top: 40%;
   font-size: 2.3em;
   width: 100%;
   font-family: "Lato", sans-serif;
   font-weight: 900;
   text-align: center;
+}
+.logoContainer{
+}
+.menuContainer{
+  height: 100%;
 }
