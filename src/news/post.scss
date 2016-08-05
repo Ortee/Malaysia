@@ -3,10 +3,20 @@
   height: 100%;
   margin-bottom: 10px;
   min-height: 500px;
+  opacity: 0.8;
 }
 .postText{
   text-align: left;
-  // border: 1px solid red;
   font: 'Lato';
   font-size: 18px;
+}
+.postDetail{
+  text-align: center;
+  font-size: 1.0em;
+  margin-bottom: 0;
+}
+.postLine{
+  border-bottom: 1px solid white;
+  margin-bottom: 15px;
+  opacity: 0.8;
 }

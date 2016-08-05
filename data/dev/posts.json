@@ -2,6 +2,8 @@
   "posts":[
     {
       "date":"03 sie 2016",
+      "time":"15:08",
+      "localization":"Lorem Ipsum",
       "title":"Lorem ipsum.",
       "shortDescription":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere imperdiet erat in pharetra.",
       "longDescription":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere imperdiet erat in pharetra.",
@@ -9,6 +11,8 @@
     },
     {
       "date":"04 sie 2016",
+      "time":"16:08",
+      "localization":"Lorem Ipsum",
       "title":"Lorem ipsum dolor.",
       "shortDescription":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere imperdiet erat in pharetra.",
       "longDescription":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere imperdiet erat in pharetra.",

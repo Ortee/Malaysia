@@ -39,13 +39,28 @@ export default class Post extends React.Component {
               <div class="col-xs-10 col-xs-offset-1 pageLogo">
                 {this.state.post.title}
               </div>
-              <artice>
-                <div class="col-xs-12 postContent">
-                  <div class="col-xs-12 postText">
-                  <ParseText text={this.state.post.longDescription}/>
+              <div class="row">
+                <artice>
+                  <div class="col-xs-12 postContent">
+                    <div class="col-xs-12 postText">
+                      <div class="row postLine">
+                        <div class="col-xs-4 postDetail">
+                        <i class="fa fa-calendar-o" aria-hidden="true"></i> {this.state.post.date}
+                        </div>
+                        <div class="col-xs-4 postDetail">
+                          <i class="fa fa-clock-o" aria-hidden="true"></i> {this.state.post.time}
+                        </div>
+                        <div class="col-xs-4 postDetail">
+                          <i class="fa fa-map-marker" aria-hidden="true"></i> {this.state.post.localization}
+                        </div>
+                      </div>
+                      <div class="row">
+                        <ParseText text={this.state.post.longDescription}/>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </artice>
+                </artice>
+              </div>
             </div>
           </div>
         </div>
