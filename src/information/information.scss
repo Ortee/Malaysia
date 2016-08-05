@@ -20,10 +20,25 @@
   // text-align: left;
   width: 100%;
 }
-.greyIcon .redIcon .greenIcon{
-  border:1px solid #090909;
-  width: 50px;
-  height: 50px;
-  background-color: red;
-  position: absolute;
+.bookingContent{
+  overflow: hidden;
+  height: 100%;
+  margin-top: 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 2.0em;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.bookingText{
+  font-size: 0.8em;
+}
+.bookingImg{
+  border:1px solid white;
+}
+.bookingImgContent{
+  text-align: center;
+}
+.bookingTextRow{
+  margin-top: 20px;
 }

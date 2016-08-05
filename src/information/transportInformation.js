@@ -3,9 +3,6 @@ import ReactDOM from 'react-dom';
 import Bootstrap from 'bootstrap';
 import config from '../config.json';
 
-
-import { Router, Link, Route, IndexRoute, hashHistory } from 'react-router';
-
 export default class TransportInformation extends React.Component {
   constructor(){
     super();

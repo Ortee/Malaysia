@@ -48,7 +48,7 @@ export default class Information extends React.Component {
               <div onClick={this.clickButton.bind(this, 2)} class={secondButtonClasses}>ZAKWATEROWANIE</div>
               </div>
             </div>
-            <div class="row transportContent">
+            <div class="row transportContent contentRow">
               <article>
                 {this.state.content}
               </article>
