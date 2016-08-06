@@ -58,13 +58,16 @@ export class TableItem extends React.Component {
 
   render() {
     var icon;
-    if(this.props.status === 'NO') {
+    if(this.props.status === 'WAIT') {
       icon = <div><i class="fa fa-spinner fa-pulse fa-lg fa-fw"></i><span class="sr-only">Loading...</span></div>
-    } else if(this.props.status === 'YES') {
+    } else if(this.props.status === 'PLANE') {
       icon = <i class="fa fa-plane fa-lg" aria-hidden="true"></i>
-    } else {
+    } else if(this.props.status === 'DONE') {
       icon = <i class="fa fa-check fa-lg" aria-hidden="true"></i>
+    } else if(this.props.status === 'BUS') {
+      icon = <i class="fa fa-bus fa-lg" aria-hidden="true"></i>
     }
+
     return(
       <tr>
         <td>{this.props.date}</td>

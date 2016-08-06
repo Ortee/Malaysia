@@ -53,7 +53,7 @@ export class Localizaiton extends React.Component {
               LOKALIZACJA: {this.props.localization}
             </div>
             <div class="row bookingTextRow">
-              ILOSC DNI: {this.props.days}
+              ILOŚĆ DNI: {this.props.days}
             </div>
             <div class="row bookingTextRow">
               OCENA(1-10): {this.props.mark}
